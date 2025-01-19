@@ -1,7 +1,5 @@
 ## Implementing a Basic CAD Framework
-Christian Rogerson
-
-Created for CS5310 Computer Graphics with Professor Mike Shah
+Created by Christian Rogerson for CS5310 Computer Graphics with Professor Mike Shah
 
 <img src="https://github.com/user-attachments/assets/144b8007-d722-49c3-a890-22f5eaba6ea7" alt="BasiCAD" width="500"/>
 
