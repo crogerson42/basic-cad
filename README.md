@@ -10,14 +10,16 @@ _Created by Christian Rogerson for CS5310 Computer Graphics with Professor Mike 
 ### Description
 This program implements a very simple CAD system in C++ using OpenGL.  It was created as a final project, using knowledge acquired over the course of a graduate-level class on 3D graphics.  Currently implemented features include:
 
-* Movable camera
-* Preliminary GUI buttons
-* Keyboard controls (detailed below)
-* Creating new cubic extrudes
-* Lengthening/shortening extrusions
-* Moving extrusions in six dimensions
-* Loading custom-formatted geometry files (_Geometry files contain descriptions of planes, sketches, and extrusions_)
-* Hiding/showing reference planes and wireframe mode
+* Interface:
+** Movable camera
+** Preliminary GUI buttons
+** Keyboard controls (detailed below)
+* Geometry:
+** Creating new cubic extrudes
+** Lengthening/shortening extrusions
+** Moving extrusions in six dimensions
+** Loading custom-formatted geometry files (_Geometry files contain descriptions of planes, sketches, and extrusions_)
+** Hiding/showing reference planes and wireframe mode
 
 These features form a very basic core of CAD operations that "do something cool" in OpenGL, but additional features are intended to be added over time following the initial academic scope of this project:
 
