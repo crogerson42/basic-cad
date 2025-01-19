@@ -36,25 +36,55 @@ As a graphics application, it's better seen than described, so enjoy the short v
 * ~ - cycle arrowkey edit mode
 * ↑↓→← - edit geometry
 * N - create new extrude
+
 ### UI Buttons
 * Save file
 * Load file
 * Wireframe
 * Toggle planes
 * Create new extrude
+
 ### Compilation
 Run Python script "build.py", i.e.:
 
 *py build.py*
 
 This will generate "project.exe" which can be executed with the arugments detailed below.
-### Recommended Arguments:
+
+### Recommended Arguments
 ./project ./geometry/robot.geo
 * // loads a model of a simple anthropomorphic robot (see screenshot)
 
 ./project ./geometry/test.geo
 * // loads a simple extrude of a concave polygon
-### References:
+
+### References
 This project was built upon files created over the course of the semester (camera, etc.), including with permission several files created by Professor Mike Shah, which are cited as such in document headers (Texture.hpp/.cpp, Image.hpp/.cpp, etc.).  This project also uses and includes the GLAD and GLM libraries.
 
 Additionally, https://www.geometrictools.com/ was a very helpful resource on polygon tesselation algorithms.  A very basic approach is used in the current implementation of extrusions, but more advanced algorithms may be revisited in the future.
+
+### Feature History
+_Timeline/sequence of feature implementation prior to sharing to a new, public repository_
+1) Foundation & Structure:
+   * Initial commit: camera, basic coordinate planes
+   * Reorganized plane rendering pipeline
+   * Able to render extrusion shells
+   * Top and bottom faces added to extrusions
+   * Vertex normals calculated using surrounding faces
+   * Initial lighting implemented in shader
+   * Updated tessellation to render hollow if tessellation fails
+2) GUI:
+   * Infrastructure for GUI (non-interactive buttons now rendering)
+   * Added GUI static elements (background bars)
+   * Spacebar toggles CursorMode/LookMode; buttons can register clicks in CursorMode
+   * Able to read geometry data from files defining planes, sketches, and extrudes
+   * Created sample geometry files to read
+   * Texture added to buttons
+   * Button click animation
+3) Geometry Manipulation & Polish:
+   * Can load models; buttons can perform functions; MAJOR FIX: buffers now only cleared by main(), not by destructors, to avoid issues with temp copy objects clearing their originator's buffers
+   * Can export validly formatted geometry files
+   * Added UI controls to menu bar (toggle wireframe, toggle planes)
+   * Cycle selection with Tab; use UP/DOWN arrows to modify extrusions
+   * Able to shift extrusion bases along e-direction w/ L/R ARROW; note: cannot preserve on save (same session only)
+   * Able to create new extrusions with N or GUI button
