@@ -44,7 +44,9 @@ As a graphics application, it's better seen than described, so enjoy the short v
 * Create new extrude
 ### Compilation
 Run Python script "build.py", i.e.:
+
 *py build.py*
+
 This will generate "project.exe" which can be executed with the arugments detailed below.
 ### Recommended Arguments:
 ./project ./geometry/robot.geo
