@@ -13,7 +13,6 @@ This program implements a very simple CAD system in C++ using OpenGL.  It was cr
 * Movable camera
 * Preliminary GUI buttons
 * Keyboard controls (detailed below)
-
 * Creating new cubic extrudes
 * Lengthening/shortening extrusions
 * Moving extrusions in six dimensions
