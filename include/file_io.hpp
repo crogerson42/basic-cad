@@ -1,0 +1,1 @@
+void LoadObjectFromFile(std::string modelFilePath);
