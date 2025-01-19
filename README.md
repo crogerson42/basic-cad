@@ -21,7 +21,7 @@ This program implements a very simple CAD system in C++ using OpenGL.  It was cr
   * Moving extrusions in six dimensions
   * Loading custom-formatted geometry files (which contain descriptions of planes, sketches, and extrusions_)
 
-These features form a very basic core of CAD operations that "do something cool" in OpenGL, but additional features are intended to be added over time following the initial academic scope of this project:
+These features form a very basic core of CAD operations that "do something cool" in OpenGL.  A significant portion of this project was spent creating the datastructures and objects needed to represent geometry both mathematically and visually (planes, sketches, and extrusions).  These representations are neither fully utilized nor demonstrated in the current implementation, but provide a flexible framework on which additional features can easily be built.  Additional features planned following the initial academic scope of this project include:
 
 * (Now) Load and render geometry
 * (Next) Create and modify planes, sketches, and extrusions with full user-input parameterization
